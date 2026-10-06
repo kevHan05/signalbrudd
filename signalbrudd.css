@@ -275,6 +275,7 @@ h2 span,
 }
 
 .hero h1 {
+    max-width: 100%;
     font-size: clamp(3.4rem, 10vw, 8.5rem);
     font-weight: 900;
     letter-spacing: 0.09em;
@@ -747,6 +748,10 @@ footer {
         flex-wrap: wrap;
     }
 
+   .nav-button {
+    display: none;
+}
+
     /* Navigasjonen kommer under logoen på små skjermer */
     .nav-links {
         order: 3;
@@ -761,6 +766,14 @@ footer {
         scrollbar-width: thin;
     }
 
+   .hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.7rem, 9vw, 5rem);
+    letter-spacing: 0.04em;
+    line-height: 0.95;
+    white-space: nowrap;
+   }
+   
     .nav-links a {
         display: inline-block;
         min-height: 46px;
@@ -798,15 +811,14 @@ footer {
         gap: 12px;
     }
 
+   .nav-button {
+    display: none;
+}
+
     .logo {
         font-size: 0.7rem;
     }
 
-    .nav-button {
-        min-height: 46px;
-        padding: 12px 13px;
-        font-size: 0.65rem;
-    }
 
     .nav-links {
         gap: 8px;
@@ -823,9 +835,12 @@ footer {
     }
 
     .hero h1 {
-        font-size: clamp(3.1rem, 15vw, 5rem);
-        letter-spacing: 0.05em;
-    }
+    max-width: 100%;
+    font-size: clamp(2.2rem, 10vw, 3.7rem);
+    letter-spacing: 0.025em;
+    line-height: 0.95;
+    white-space: nowrap;
+   }
 
     .festival-type {
         font-size: 0.72rem;
