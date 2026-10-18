@@ -553,14 +553,17 @@ h2 span,
 }
 
 .timeline {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
     margin-top: 80px;
     border-top: 1px solid var(--line);
 }
 
 .timeline-item {
     display: grid;
-    grid-template-columns: 130px 1fr;
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 16px;
     padding: 28px 0;
     border-bottom: 1px solid var(--line);
     transition:
@@ -862,6 +865,15 @@ footer {
 
     .info-grid {
         grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        grid-template-columns: 130px 1fr;
+        gap: 30px;
     }
 
     .instagram-card {
