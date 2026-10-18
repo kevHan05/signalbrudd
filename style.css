@@ -263,12 +263,13 @@ footer p {
 
 .requirements-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     border-top: 1px solid var(--line);
     border-left: 1px solid var(--line);
 }
 
 .requirement-card {
+    min-width: 0;
     min-height: 260px;
     padding: 30px;
     border-right: 1px solid var(--line);
